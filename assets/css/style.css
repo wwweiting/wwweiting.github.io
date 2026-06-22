@@ -654,10 +654,9 @@ a.venue-tag:hover {
   gap: 12px;
   margin-bottom: 20px;
 }
+.contact-form input,
 .contact-form textarea {
   width: 100%;
-  min-height: 120px;
-  resize: vertical;
   padding: 14px 16px;
   color: var(--ink);
   background: rgba(255,255,255,0.42);
@@ -669,10 +668,16 @@ a.venue-tag:hover {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--black);
 }
+.contact-form input::placeholder,
 .contact-form textarea::placeholder { color: #8c8c8c; }
 .contact-form button {
   align-self: flex-start;
