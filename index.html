@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weiting Huang | Academic Homepage</title>
+  <meta name="description" content="Research Assistant at Academia Sinica. B.S. in Data Science from Soochow University. Research on machine learning, large language models, and speech recognition." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Weiting Huang</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-experience">Work</a></li>
+        <li><a href="#other-experience">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / PROFILE ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-photo">
+        <img src="data/IMG_8577.JPG" alt="Weiting Huang" id="profile-img" />
+      </div>
+      <div class="hero-info">
+        <h1 class="hero-name">Weiting Huang</h1>
+        <p class="hero-title">Research Assistant · <a href="https://www.sinica.edu.tw" target="_blank">Academia Sinica</a></p>
+        <p class="hero-dept">B.S. in Data Science, <a href="https://www.scu.edu.tw" target="_blank">Soochow University</a></p>
+        <p class="hero-bio">
+          I received my B.S. in Data Science from Soochow University in Taiwan (ranked 4th / 101).
+          I am currently a Research Assistant at Academia Sinica, working on speech recognition and LLM-related research.
+          My interests include <strong>machine learning</strong>, <strong>large language models</strong>,
+          <strong>automatic speech recognition (ASR)</strong>, and <strong>generative AI</strong>.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:bindy.huang@gmail.com" class="btn-link" title="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="data/CV.pdf" class="btn-link" title="CV" target="_blank">
+            <i class="fas fa-file-lines"></i> CV
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=UavVJhQAAAAJ" class="btn-link" title="Google Scholar" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Scholar
+          </a>
+          <a href="https://github.com/wwweiting" class="btn-link" title="GitHub" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/huangweiting" class="btn-link" title="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">Jun 2026</span>
+          <span class="news-text">🎉 Poster on <strong>RCbench</strong> accepted at <strong>the ICML 2026 Workshop on Machine Learning for Audio</strong>.</span>
+        </li>
+        <li>
+          <span class="news-date">Jan 2026</span>
+          <span class="news-text">👩🏻‍💻 Started as <strong>Research Assistant</strong> at Academia Sinica.</span>
+        </li>
+        <li>
+          <span class="news-date">Nov 2025</span>
+          <span class="news-text">🥈 <strong>2nd Prize</strong> in the 2025 InnoServe Competition (AMD Smart Living &amp; Open Innovation Track).</span>
+        </li>
+        <li>
+          <span class="news-date">Sep 2025</span>
+          <span class="news-text">🥉 <strong>3rd Prize</strong> in the 2025 SAS Campus Hackathon.</span>
+        </li>
+        <li>
+          <span class="news-date">Apr 2025</span>
+          <span class="news-text">🎉 Paper accepted to <strong>JOAMS</strong> and awarded <strong>Best Student Paper</strong> (selected from ICMBT 2025).</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH INTERESTS ===== -->
+  <section class="section" id="research">
+    <div class="container">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon"><i class="fas fa-brain"></i></div>
+          <h3>Large Language Models</h3>
+          <p>Prompt engineering, quantization baselines, and applying LLMs to key information extraction and downstream NLP tasks.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Machine Learning &amp; Data Mining</h3>
+          <p>Predictive modeling, feature extraction, EDA, and data-driven analysis across audio, text, and structured datasets.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon"><i class="fas fa-microphone-lines"></i></div>
+          <h3>Speech Recognition</h3>
+          <p>Benchmarking retrospective clarification in ASR, post-correction frameworks, and evaluating LLM-based methods on real-world transcripts.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h3>Generative AI</h3>
+          <p>Exploring generative AI applications in marketing, empathy response generation, and automated visualization workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <h2 class="section-title">Publications &amp; Presentations</h2>
+
+      <div class="pub-entry">
+        <div class="pub-info">
+          <p class="pub-title">
+            RCbench: Benchmarking Retrospective Clarification in ASR
+          </p>
+          <p class="pub-authors">
+            <strong>Wei-Ting Huang</strong>, Chin-Yuan Yeh, De-Nian Yang, Ming-Syan Chen
+          </p>
+          <p class="pub-venue">
+            <a href="https://icml.cc/virtual/2026/workshop/54087" class="venue-tag workshop" target="_blank" rel="noopener noreferrer">ICML 2026 Workshop</a>
+            <span class="pub-venue-type">(Poster)</span>
+          </p>
+          <div class="pub-links">
+            <a href="data/RCbench.pdf" target="_blank" title="Paper"><i class="fas fa-file-lines"></i> Paper</a>
+            <a href="https://github.com/wwweiting/RCbench" target="_blank" title="Code"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <p class="pub-abstract-toggle" onclick="toggleAbstract(this)">
+            <i class="fas fa-chevron-down"></i> Abstract
+          </p>
+          <div class="pub-abstract hidden">
+            <p>Human speakers often clarify newly introduced or ambiguous words later in an utterance, for example by providing an explanation, an acronym expansion, or a spelling cue. However, current ASR systems are generally unable to incorporate such later clarifications to revise earlier parts of the transcript. We define this problem as retrospective clarification, and present RCBench, a benchmark consisting of three scenarios: acronym disambiguation, disambiguation by semantic explanation, and disambiguation by spelling. On RCBench, we find a substantial gap between current ASR systems and human participants. In particular, within the same utterance, ASR baselines achieve 60–90% accuracy on control words that do not require retrospective clarification, suggesting that the main challenge lies in revising specific target words based on later clarification.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-info">
+          <p class="pub-title">
+            A New Development Matrix for Generative AI Applications in Marketing
+          </p>
+          <p class="pub-authors">
+            <strong>Wei-Ting Huang</strong>, Chiang-Yu Cheng
+          </p>
+          <p class="pub-venue">
+            <a href="https://www.joams.com/" class="venue-tag journal" target="_blank" rel="noopener noreferrer">JOAMS 2025</a>
+            <span class="pub-venue-type">Journal of Advanced Management Science, 13(2):50–54, 2025</span>
+          </p>
+          <p class="pub-venue" style="margin-top: 4px;">
+            <a href="https://www.icmbt.org/2025.html" class="venue-tag conference" target="_blank" rel="noopener noreferrer">ICMBT 2025</a>
+            <span class="pub-venue-type"> (Oral) <strong> 🎖️ Best Student Paper</strong></span>
+          </p>
+          <div class="pub-links">
+            <a href="https://www.joams.com/2025/JOAMS-V13N2-50.pdf" target="_blank" title="Paper"><i class="fas fa-file-lines"></i> Paper</a>
+          </div>
+          <p class="pub-abstract-toggle" onclick="toggleAbstract(this)">
+            <i class="fas fa-chevron-down"></i> Abstract
+          </p>
+          <div class="pub-abstract hidden">
+            <p>According to the rapid advancements and fundamental transformations brought by generative Artificial Intelligence (AI), the marketing industry is experiencing significant changes. It offers advanced capabilities for content creation, customer engagement, and predictive analytics. However, the lack of domain-specific frameworks tailored for marketing obstructs the full utilization of these tools. This study introduces a new development matrix for generative AI applications in marketing, focusing on two key dimensions: personalization and clear data sources. By conducting a systematic literature review using the PRISMA methodology, this research collected insights from 142 publications and synthesized findings from 53 of them. The proposed matrix categorizes generative AI tools into four quadrants: Precise Personalization, Tailored Potential, Limited Insights, and Aimless Exploration. These categories highlight the importance of integrating personalized configurations with accurate and well-defined data sources to optimize marketing outcomes. The findings indicate that further development of generative AI for marketing can focus on personalization and clear data sources to align with the unique demands of marketing strategies. In the future, research will be encouraged to explore additional variables, such as localization and the influence of celebrity endorsements, to expand the applicability of this framework.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-info">
+          <p class="pub-title">
+            Application of Large Language Model-Based Prompt Engineering for Key Information Extraction from Audio-Visual Content
+          </p>
+          <p class="pub-authors">
+            <strong>Wei Ting Huang</strong>, Yu-Chen Liu, Ming-Hsiang Su
+          </p>
+          <p class="pub-venue">
+            <a href="https://rocling2024.github.io/" class="venue-tag conference" target="_blank" rel="noopener noreferrer">Rocling 2024</a>
+            <span class="pub-venue-type">(Poster)</span>
+          </p>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2024.rocling-1.22.pdf" target="_blank" title="Paper"><i class="fas fa-file-lines"></i> Paper</a>
+          </div>
+          <p class="pub-abstract-toggle" onclick="toggleAbstract(this)">
+            <i class="fas fa-chevron-down"></i> Abstract
+          </p>
+          <div class="pub-abstract hidden">
+            <p>當今科技發達的時代，傳統傳播媒體已逐漸被網路影音所取代，而短影音更成為行銷、傳播資訊的重要媒介。爲協助影音創作者更有效率地將長影片製作成短影音以增加曝光度，本研究利用 BERT 模型探索大型語言模型對於篩選文本精華之能力。首先以人工抓取一百部影片字幕文本之精華，接著運用 GPT-4o 執行 4 種不同指令，蒐集 4 種不同的重要資訊篩選結果，最終將 4 種指令生成與人工篩選之文本進行相似度對比分析，歸納出最準確指令之特點。實驗結果發現給予大型語言模型較為明確地指令的確可以篩選出長影片的重要片段，使創作者能更有效率地將製作好的長影片剪輯為六十秒左右的短影音。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-info">
+          <p class="pub-title">
+            基於常識資訊與情緒種類建立同理回應生成系統
+          </p>
+          <p class="pub-authors">
+            <strong>Wei Ting Huang</strong>, Yu-Chen Liu, Qi-Lun Xu, Ming-Hsiang Su
+          </p>
+          <p class="pub-venue">
+            <a class="venue-tag conference" target="_blank" rel="noopener noreferrer">TANET 2024</a>
+            <span class="pub-venue-type">(Oral)</span>
+          </p>
+          <div class="pub-links">
+            <a href="data/基於常識資訊與情緒種類建立同理回應生成系統.pdf" target="_blank" title="Paper"><i class="fas fa-file-lines"></i> Paper</a>
+          </div>
+          <p class="pub-abstract-toggle" onclick="toggleAbstract(this)">
+            <i class="fas fa-chevron-down"></i> Abstract
+          </p>
+          <div class="pub-abstract hidden">
+            <p>聊天機器人基於預定義規則，難以理解使用者情感，也無法達到人類的語境能力，因此讓聊天機器人識別講述者的情緒，並且回應出符合其主題的同理回應句變成一大挑戰。本研究提出了一種情緒分類器的模型，使得生成的回應句更富有同理心，也增加情緒預測的準確度。前人的研究證實聊天機器人的訊息量以及同理心對使用者的滿意度有著正向影響，我們認為增加回應句的質量這項任務也成了一大挑戰，為了解決這個問題，我們提出了一種基於詞向量的預訓練模型，重新訓練歷史情境句，藉此提升了回應句的流暢度。研究結果表明本研究提出的 CER 模型優於其他的基線模型，除了生成出更富有同理心的回應句外，也使得生成的回應句更加流暢。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-info">
+          <p class="pub-title">
+            Analysis and Discussion of Feature Extraction Technology for Musical Genre Classification
+          </p>
+          <p class="pub-authors">
+            Shu-Hua Chen, <strong>Wei-Ting Huang</strong>, Cheng-Hao Lai, Yu-Lun Lin, Ming-Hsiang Su
+          </p>
+          <p class="pub-venue">
+            <a href="https://ococosda2024.github.io/" class="venue-tag conference" target="_blank" rel="noopener noreferrer">O-COCOSDA 2024</a>
+            <span class="pub-venue-type">(Poster)</span>
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1109/O-COCOSDA64382.2024.10800024" target="_blank" rel="noopener noreferrer" title="Paper"><i class="fas fa-file-lines"></i> Paper</a>
+          </div>
+          <p class="pub-abstract-toggle" onclick="toggleAbstract(this)">
+            <i class="fas fa-chevron-down"></i> Abstract
+          </p>
+          <div class="pub-abstract hidden">
+            <p>Music Information Retrieval (MIR) applications using deep learning methods are diverse and well-developed. This study utilized the GTZAN dataset, widely used for music genre classification, which includes 10 genres, each with 100 tracks, totaling 1,000 30-second clips, providing diversity and representativeness. The primary purpose of this study is to examine changes in the accuracy of selected music genre classifier programs under different analysis models by reducing feature dimensionality. According to the experimental results, the overall accuracy is higher than the 93.24% used by the original Kaggle platform model provider using KNN. Among them, the number of features of 95 and the number of batches of 128 under the MLP model will produce an accuracy of 95.50%.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.scu.edu.tw" target="_blank" rel="noopener noreferrer">Soochow University</a></h3>
+              <span class="timeline-date">Sep 2022 – Jun 2026</span>
+            </div>
+            <p class="timeline-role">B.S. in Data Science</p>
+            <ul class="timeline-detail-list">
+              <li>Ranked 4th / 101, GPA 4.0/4.0</li>
+              <li>Academic Excellence Award (Fall 2022, Spring 2022, Fall 2023, Spring 2024)</li>
+              <li>Coursework: Machine Learning, Natural Language Processing, Data Mining, Data Analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK EXPERIENCE ===== -->
+  <section class="section section-alt" id="work-experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.sinica.edu.tw" target="_blank" rel="noopener noreferrer">Academia Sinica</a></h3>
+              <span class="timeline-date">Jan 2026 – Present</span>
+            </div>
+            <p class="timeline-role">Research Assistant</p>
+            <ul class="timeline-detail-list">
+              <li>Developed RCBench, a 900-recording benchmark for ASR retrospective clarification, revealing that current methods perform substantially worse on clarification tasks (&lt;20% accuracy).</li>
+              <li>Conducted quantization baseline experiments using open-source models on multi-domain and long-tailed datasets.</li>
+              <li>Conducted GPU-based baseline testing (PHA-FIM) to analyze parallel efficiency and computational performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.taiwanmobile.com/" target="_blank" rel="noopener noreferrer">Taiwan Mobile Co., Ltd.</a></h3>
+              <span class="timeline-date">Jul 2025 – Dec 2025</span>
+            </div>
+            <p class="timeline-role">AI Application Research &amp; Analysis Intern · E-Service Technology Division</p>
+            <ul class="timeline-detail-list">
+              <li>Evaluated an LLM-based ASR post-correction framework, benchmarking multiple prompts and models (GPT-4.1, GPT-4o, GPT-5, Gemma-3) across 50+ real-world transcripts.</li>
+              <li>Developed an automated data collection pipeline for large-scale YouTube videos (78% download success rate).</li>
+              <li>Researched and evaluated model architectures for acoustic fingerprint (gender and age classification).</li>
+              <li>Led a team of interns in the InnoServe competition (AMD Smart Living &amp; Open Innovation category).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Fourest Taiwan</h3>
+              <span class="timeline-date">Jun 2024 – Dec 2024</span>
+            </div>
+            <p class="timeline-role">Marketing Intern</p>
+            <ul class="timeline-detail-list">
+              <li>Increased official Threads account traffic by 350% and generated 600+ new interactions through independent content planning and publishing.</li>
+              <li>Built and maintained Tableau dashboards to analyze daily ad spending and provide actionable insights for ad campaigns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OTHER EXPERIENCE ===== -->
+  <section class="section" id="other-experience">
+    <div class="container">
+      <h2 class="section-title">Other Experience</h2>
+      <p class="section-subtitle">Competitions, extracurricular activities, and projects.</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.innoserve.taipei/" target="_blank" rel="noopener noreferrer">2025 InnoServe Competition – AMD Track</a></h3>
+              <span class="timeline-date">Sep – Nov 2025</span>
+            </div>
+            <p class="timeline-role">Project Leader · 2nd Prize</p>
+            <ul class="timeline-detail-list">
+              <li>Led a team from idea generation to system and UI design.</li>
+              <li>Developed an initial demo prototype of an accessible shopping system for visually impaired users using Figma.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.sas.com/taiwan/" target="_blank" rel="noopener noreferrer">2025 SAS Campus Hackathon</a></h3>
+              <span class="timeline-date">Jul – Sep 2025</span>
+            </div>
+            <p class="timeline-role">Team Member · 3rd Prize · SAS Viya</p>
+            <ul class="timeline-detail-list">
+              <li>Analyzed customer data and developed a churn prediction model with 80%+ accuracy, generating NTD 1M+ simulated business value; ranked 8th out of 50 teams.</li>
+              <li>Integrated generative AI into marketing applications through customized visualization pipeline design.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://yeof.epoch.org.tw/" target="_blank" rel="noopener noreferrer">Epoch Foundation – Young Entrepreneurs of the Future</a></h3>
+              <span class="timeline-date">Feb – Jul 2025</span>
+            </div>
+            <p class="timeline-role">Selected Participant</p>
+            <ul class="timeline-detail-list">
+              <li>Selected among top candidates to pitch a startup concept to industry professionals.</li>
+              <li>Developed an Airbnb-inspired nighttime shared-space model, transforming underutilized cafés into unmanned co-working spaces.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Interaction of Exercise and Sleep Quality on Stress</h3>
+              <span class="timeline-date">Dec 2024</span>
+            </div>
+            <p class="timeline-role">Course Project · Python, R</p>
+            <ul class="timeline-detail-list">
+              <li>Analyzed the effects of exercise and sleep quality on stress levels through regression analysis.</li>
+              <li>Found both factors to be significant predictors, with a combined interaction effect greater than their independent effects.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://www.kaggle.com/datasets/ronitf/heart-attack-analysis-and-prediction-dataset" target="_blank" rel="noopener noreferrer">Heart Attack Prediction</a></h3>
+              <span class="timeline-date">Dec 2024</span>
+            </div>
+            <p class="timeline-role">Course Project · R</p>
+            <ul class="timeline-detail-list">
+              <li>Analyzed a Kaggle dataset for heart disease prediction using decision trees.</li>
+              <li>Identified optimal model performance at complexity parameter 0.042 with the lowest relative error.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://developers.line.biz/en/docs/messaging-api/" target="_blank" rel="noopener noreferrer">LINE Bot Project</a></h3>
+              <span class="timeline-date">Sep 2023 – Dec 2023</span>
+            </div>
+            <p class="timeline-role">Team Project · Python</p>
+            <ul class="timeline-detail-list">
+              <li>Developed a LINE Bot using Python and Spotify API to provide music festival information and personalized song recommendations.</li>
+              <li>Conducted user testing with nearly 100% positive feedback on usability and features.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3><a href="https://developers.line.biz/en/docs/messaging-api/using-beacons/" target="_blank" rel="noopener noreferrer">LINE Beacon Project</a></h3>
+              <span class="timeline-date">Jan 2023 – Feb 2023</span>
+            </div>
+            <p class="timeline-role">Planning Team Member</p>
+            <ul class="timeline-detail-list">
+              <li>Designed a LINE Beacon-based location game for campus exploration, creating an engaging onboarding experience for freshmen.</li>
+              <li>Achieved Best Popularity Award, attracting 200+ users in two days through the official LINE channel.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Feel free to reach out or just leave the message here if you're interested in collaborating or have any questions!</p>
+          <form class="contact-form" action="https://formsubmit.co/bindy.huang@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from Weiting Huang's homepage" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" id="form-next" value="" />
+            <textarea name="message" placeholder="Leave your message here..." required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-social">
+          <a href="mailto:bindy.huang@gmail.com" class="social-btn email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="https://github.com/wwweiting" class="social-btn github" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=UavVJhQAAAAJ" class="social-btn scholar" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+          </a>
+          <a href="https://linkedin.com/in/huangweiting" class="social-btn linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Weiting Huang · Last updated June 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
